@@ -16,7 +16,7 @@ const Telalogin = () => {
           <form onSubmit={handlerLogin}>
     
           <input
-              placeholder='nome'
+              placeholder='Nome'
               type="nome" >
             </input>
 
