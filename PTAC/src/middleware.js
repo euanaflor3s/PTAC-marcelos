@@ -18,12 +18,14 @@ export const middleware = (request) => {
     }
     if (isTokenValidated) {
         if (request.nextUrl.pathname === '/') {
+            return NextResponse.redirect(Users);
         }
     }
 
     NextResponse.next();
 };
+
 export const config = {
-    matcher: ['/', '/pages/dashboard']
+    matcher: ['/', '/pages/dashboard', '/pages/alterar', '/pages/registrar', ]
 };
 
